@@ -1,0 +1,215 @@
+### Base URL
+@baseUrl = http://localhost:8080/api
+
+###
+### ─────────────────────────────────────────
+###  CATEGORIES
+### ─────────────────────────────────────────
+
+### Listar categorias
+GET {{baseUrl}}/categories
+Accept: application/json
+
+###
+
+### Criar categoria - Filme
+# @name createFilme
+POST {{baseUrl}}/categories
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Filme",
+  "description": "A categoria mais assistida",
+  "is_active": true
+}
+
+###
+
+### Criar categoria - Documentário
+POST {{baseUrl}}/categories
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Documentário",
+  "is_active": true
+}
+
+###
+
+### Buscar categoria por ID
+GET {{baseUrl}}/categories/{{filme_id}}
+Accept: application/json
+
+###
+
+### Atualizar categoria
+PUT {{baseUrl}}/categories/{{filme_id}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Long Metragem",
+  "description": "Filmes longos",
+  "is_active": true
+}
+
+###
+
+### Deletar categoria
+DELETE {{baseUrl}}/categories/{{filme_id}}
+Accept: application/json
+
+###
+### ─────────────────────────────────────────
+###  GENRES
+### ─────────────────────────────────────────
+
+### Listar gêneros
+GET {{baseUrl}}/genres
+Accept: application/json
+
+###
+
+### Criar gênero
+# @name createGenre
+POST {{baseUrl}}/genres
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Ação",
+  "categories_id": []
+}
+
+###
+
+### Buscar gênero por ID
+GET {{baseUrl}}/genres/{{genre_id}}
+Accept: application/json
+
+###
+
+### Atualizar gênero
+PUT {{baseUrl}}/genres/{{genre_id}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Drama",
+  "categories_id": [],
+  "is_active": true
+}
+
+###
+
+### Deletar gênero
+DELETE {{baseUrl}}/genres/{{genre_id}}
+Accept: application/json
+
+###
+### ─────────────────────────────────────────
+###  CAST MEMBERS
+### ─────────────────────────────────────────
+
+### Listar membros do elenco
+GET {{baseUrl}}/cast_members
+Accept: application/json
+
+###
+
+### Criar membro do elenco
+# @name createCastMember
+POST {{baseUrl}}/cast_members
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Vin Diesel",
+  "type": "ACTOR"
+}
+
+###
+
+### Buscar membro do elenco por ID
+GET {{baseUrl}}/cast_members/{{cast_member_id}}
+Accept: application/json
+
+###
+
+### Atualizar membro do elenco
+PUT {{baseUrl}}/cast_members/{{cast_member_id}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Vin Diesel",
+  "type": "ACTOR"
+}
+
+###
+
+### Deletar membro do elenco
+DELETE {{baseUrl}}/cast_members/{{cast_member_id}}
+Accept: application/json
+
+###
+### ─────────────────────────────────────────
+###  VIDEOS
+### ─────────────────────────────────────────
+
+### Listar vídeos
+GET {{baseUrl}}/videos
+Accept: application/json
+
+###
+
+### Criar vídeo (sem arquivos)
+POST {{baseUrl}}/videos
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Velozes e Furiosos",
+  "description": "Corridas e adrenalina",
+  "year_launched": 2001,
+  "opened": true,
+  "rating": "L",
+  "duration": 106,
+  "categories_id": [],
+  "genres_id": [],
+  "cast_members_id": []
+}
+
+###
+
+### Buscar vídeo por ID
+GET {{baseUrl}}/videos/{{video_id}}
+Accept: application/json
+
+###
+
+### Atualizar vídeo
+PUT {{baseUrl}}/videos/{{video_id}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Velozes e Furiosos",
+  "description": "Corridas e adrenalina",
+  "year_launched": 2001,
+  "opened": true,
+  "published": true,
+  "rating": "L",
+  "duration": 106,
+  "categories_id": [],
+  "genres_id": [],
+  "cast_members_id": []
+}
+
+###
+
+### Deletar vídeo
+DELETE {{baseUrl}}/videos/{{video_id}}
+Accept: application/json
