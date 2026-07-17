@@ -41,10 +41,10 @@ services:
     ports:
       - 8443:8443
     command:
-      - start-dev # Utilizar esse comando quando a aplicação estiver executando fora do Docker
-      - start-dev --http-port=8443 # Utilizar esse comando quando a aplicação estiver executando fora do Docker
-#   volumes:
-      - ../.docker/keycloak:/opt/keycloak/data/h2:rw
+      - start-dev
+      - --http-port=8443 # Utilizar esse comando quando a aplicação estiver executando fora do Docker
+#    volumes:
+#      - ../.docker/keycloak:/opt/keycloak/data/h2:rw
     networks:
       - adm_videos_services
     extra_hosts:
