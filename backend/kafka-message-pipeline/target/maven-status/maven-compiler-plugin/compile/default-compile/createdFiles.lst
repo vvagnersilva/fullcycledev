@@ -1,0 +1,16 @@
+com/example/kafkamessagepipeline/infrastructure/persistence/SpringDataMessageRepository.class
+com/example/kafkamessagepipeline/KafkaMessagePipelineApplication.class
+com/example/kafkamessagepipeline/application/port/in/ReceiveMessageUseCase.class
+com/example/kafkamessagepipeline/application/port/out/MessagePublisherPort.class
+com/example/kafkamessagepipeline/infrastructure/messaging/KafkaMessageListener.class
+com/example/kafkamessagepipeline/domain/Message.class
+com/example/kafkamessagepipeline/application/port/out/MessageRepositoryPort.class
+com/example/kafkamessagepipeline/infrastructure/messaging/KafkaMessagePublisherAdapter.class
+com/example/kafkamessagepipeline/infrastructure/messaging/KafkaConfig.class
+com/example/kafkamessagepipeline/infrastructure/web/MessageController.class
+com/example/kafkamessagepipeline/infrastructure/web/MessageRequest.class
+com/example/kafkamessagepipeline/infrastructure/persistence/MessageRepositoryAdapter.class
+com/example/kafkamessagepipeline/infrastructure/persistence/MessageJpaEntity.class
+com/example/kafkamessagepipeline/application/port/in/PublishMessageUseCase.class
+com/example/kafkamessagepipeline/application/port/in/ListMessagesUseCase.class
+com/example/kafkamessagepipeline/application/MessageService.class

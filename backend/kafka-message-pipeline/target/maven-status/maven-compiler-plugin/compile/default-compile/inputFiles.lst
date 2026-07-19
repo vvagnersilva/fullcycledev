@@ -1,0 +1,16 @@
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/KafkaMessagePipelineApplication.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/application/MessageService.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/application/port/in/ListMessagesUseCase.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/application/port/in/PublishMessageUseCase.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/application/port/in/ReceiveMessageUseCase.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/application/port/out/MessagePublisherPort.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/application/port/out/MessageRepositoryPort.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/domain/Message.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/messaging/KafkaConfig.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/messaging/KafkaMessageListener.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/messaging/KafkaMessagePublisherAdapter.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/persistence/MessageJpaEntity.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/persistence/MessageRepositoryAdapter.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/persistence/SpringDataMessageRepository.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/web/MessageController.java
+/home/wasilva/Documentos/kafka-message-pipeline/src/main/java/com/example/kafkamessagepipeline/infrastructure/web/MessageRequest.java
