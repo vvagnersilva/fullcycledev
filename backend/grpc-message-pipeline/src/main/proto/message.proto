@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package grpcmessagepipeline;
+
+option java_package = "com.example.grpcmessagepipeline.grpc";
+option java_multiple_files = true;
+
+service MessageService {
+  rpc PublishMessage (PublishMessageRequest) returns (PublishMessageResponse);
+  rpc ListMessages (ListMessagesRequest) returns (stream MessageReply);
+}
+
+message PublishMessageRequest {
+  string content = 1;
+}
+
+message PublishMessageResponse {
+}
+
+message ListMessagesRequest {
+}
+
+message MessageReply {
+  int64 id = 1;
+  string content = 2;
+  string received_at = 3;
+}
